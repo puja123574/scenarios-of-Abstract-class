@@ -1,0 +1,28 @@
+abstract class Food{ 
+abstract void eat(); 
+} 
+//in abstraction, implementation is unknown by end user 
+class Pizza extends Food{ 
+void eat(){System.out.println("Pizza is fantastic");} 
+} 
+class Burger extends Food{ 
+void eat(){System.out.println("Burger is delicious");} 
+} 
+//In abstraction, method is called by programmer or user 
+class TestAbstraction{ 
+public static void main(String args[]){ 
+Food obj=new Burger();//In Abstraction, object is provided through method 
+obj.eat(); 
+} 
+} 
+ 
+Output
+
+
+Burger is delicious
+
+1
+2
+3
+ 
+Burger is delicious
